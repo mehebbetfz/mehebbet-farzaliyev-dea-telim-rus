@@ -1,4 +1,5 @@
 function isPrime(n) {
+	
 	if (n < 2) {
 		return false;
 	}
@@ -11,3 +12,5 @@ function isPrime(n) {
 	
 	return true;
 }
+
+console.log(isPrime(13));
