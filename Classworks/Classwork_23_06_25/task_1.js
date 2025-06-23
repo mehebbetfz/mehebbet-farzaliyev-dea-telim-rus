@@ -4,8 +4,14 @@ function summa1(arr) {
 
 console.log(summa1([1, 2, 3, 4, 5]));
 
-
 function summa2(arr) {
+	return eval(arr.join('+'));
+}
+
+console.log(summa2([1, 2, 3, 4, 5]));
+
+
+function summa3(arr) {
 	let total = 0;
 	for (let i = 0; i < arr.length; i++) {
 		total += arr[i];
@@ -13,10 +19,10 @@ function summa2(arr) {
 	return total;
 }
 
-console.log(summa2([1, 2, 3, 4, 5]));
+console.log(summa3([1, 2, 3, 4, 5]));
 
 
-function summa3(arr) {
+function summa4(arr) {
 	let total = 0;
 	let i = 0;
 	while (i < arr.length) {
@@ -26,9 +32,9 @@ function summa3(arr) {
 	return total;
 }
 
-console.log(summa3([1, 2, 3, 4, 5]));
+console.log(summa4([1, 2, 3, 4, 5]));
 
-function summa4(arr) {
+function summa5(arr) {
 	let total = 0;
 	let i = 0;
 	do {
@@ -38,9 +44,9 @@ function summa4(arr) {
 	return total;
 }
 
-console.log(summa4([1, 2, 3, 4, 5]));
+console.log(summa5([1, 2, 3, 4, 5]));
 
-function summa5(arr) {
+function summa6(arr) {
 	let total = 0;
 	for (const num of arr) {
 		total += num;
@@ -48,4 +54,5 @@ function summa5(arr) {
 	return total;
 }
 
-console.log(summa5([1, 2, 3, 4, 5]));
+console.log(summa6([1, 2, 3, 4, 5]));
+
