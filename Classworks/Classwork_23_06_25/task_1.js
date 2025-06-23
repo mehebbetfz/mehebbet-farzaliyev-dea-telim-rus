@@ -14,3 +14,38 @@ function summa2(arr) {
 }
 
 console.log(summa2([1, 2, 3, 4, 5]));
+
+
+function summa3(arr) {
+	let total = 0;
+	let i = 0;
+	while (i < arr.length) {
+		total += arr[i];
+		i++;
+	}
+	return total;
+}
+
+console.log(summa3([1, 2, 3, 4, 5]));
+
+function summa4(arr) {
+	let total = 0;
+	let i = 0;
+	do {
+		total += arr[i];
+		i++;
+	} while (i < arr.length);
+	return total;
+}
+
+console.log(summa4([1, 2, 3, 4, 5]));
+
+function summa5(arr) {
+	let total = 0;
+	for (const num of arr) {
+		total += num;
+	}
+	return total;
+}
+
+console.log(summa5([1, 2, 3, 4, 5]));
