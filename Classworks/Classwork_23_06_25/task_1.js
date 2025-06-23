@@ -5,7 +5,7 @@ function summa1(arr) {
 console.log(summa1([1, 2, 3, 4, 5]));
 
 function summa2(arr) {
-	return eval(arr.join('+'));
+	return eval(arr.join('+')); // Tehlukelidi
 }
 
 console.log(summa2([1, 2, 3, 4, 5]));
