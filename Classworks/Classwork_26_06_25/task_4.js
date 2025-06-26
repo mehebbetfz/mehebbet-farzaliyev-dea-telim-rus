@@ -1,11 +1,10 @@
 function findStartEndIndexes(arr, target) {
 	const result = [];
-	const len = result.length;
 	
 	for (let num of arr) {
-		if (num === target && len == 0) {
+		if (num === target && result.length == 0) {
 			result.push(arr.indexOf(num));
-		} else if (num !== target && len != 0) {
+		} else if (num !== target && result.length != 0) {
 			result.push(arr.indexOf(num));
 			break;
 		}
