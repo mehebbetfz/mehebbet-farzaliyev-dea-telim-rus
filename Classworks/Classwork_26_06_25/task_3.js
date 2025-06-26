@@ -13,4 +13,9 @@ function fibonachi(n) {
 	return result;
 }
 
-console.log(fibonachi(10))
+console.log(fibonachi(20));
+
+
+function fibonachiWithoutLoop(n) {
+
+}
